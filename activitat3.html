@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Recetas</title>
+    <!-- Etiqueta CSS sol·licitada -->
+    <link rel="stylesheet" href="receptes_cuina.css">
+</head>
+<body>
+
+    <!-- ================= VISTA PRINCIPAL (Només resum i títols) ================= -->
+    <div id="home" class="view">
+        <header class="main-header">
+            <h1>Las Recetas</h1>
+        </header>
+
+        <!-- Menú de navegació (Llista no numerada) -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#postres">Postres y dulces</a></li>
+                <li><a href="#tapas">Tapas y aperitivos</a></li>
+                <li><a href="#vegetales">Vegetales</a></li>
+            </ul>
+        </nav>
+
+        <main class="container">
+            <!-- Apartat: Postres i dolços -->
+            <section id="postres">
+                <article class="recipe-card">
+                    <h2>Natillas caseras</h2>
+                    <p>Las natillas caseras de la abuela de toda la vida.</p>
+                    <div class="card-content">
+                        <img src="img/natillas.jpg" alt="Natillas caseras">
+                        <a href="#receta-natillas" class="btn-receta">VER LA RECETA</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Apartat: Tapes i aperitius -->
+            <section id="tapas">
+                <article class="recipe-card">
+                    <h2>Arroz al horno</h2>
+                    <p>El popular y tradicional arroz al horno valenciano.</p>
+                    <div class="card-content">
+                        <img src="img/arroz_horno.jpg" alt="Arroz al horno tradicional">
+                        <a href="#receta-arroz" class="btn-receta">VER LA RECETA</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Apartat: Vegetals -->
+            <section id="vegetales">
+                <article class="recipe-card">
+                    <h2>Pisto vegetal</h2>
+                    <p>Un plato de verduras tradicional, saludable y lleno de sabor.</p>
+                    <div class="card-content">
+                        <img src="img/pisto.jpg" alt="Pisto vegetal">
+                        <a href="#receta-pisto" class="btn-receta">VER LA RECETA</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>&copy; 2026 Las Recetes. Tots els drets reservats.</p>
+        </footer>
+    </div>
+
+
+    <!-- ================= VISTA DETALLADA: NATILLAS (Ingredientes, cantidades, etc.) ================= -->
+    <div id="receta-natillas" class="recipe-view">
+        <div class="top-nav">
+            <a href="#home" class="btn-volver">VOLVER</a>
+        </div>
+        
+        <header class="recipe-title-box">
+            <h1>Natillas caseras</h1>
+        </header>
+
+        <main class="recipe-detail-container">
+            <article>
+                <h2>Ingredientes (4 personas)</h2>
+                <div class="ingredients-layout">
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>leche entera</td><td>1 litro</td></tr>
+                            <tr><td>yemas de huevo</td><td>4</td></tr>
+                            <tr><td>azúcar</td><td>120gr</td></tr>
+                            <tr><td>almidón de maíz (maicena)</td><td>1 cucharada</td></tr>
+                            <tr><td>rama de canela</td><td>1</td></tr>
+                            <tr><td>pela de limón</td><td>1 trozo</td></tr>
+                            <tr><td>galletas María</td><td>4</td></tr>
+                            <tr><td>canela en polvo</td><td>al gusto</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="recipe-img-box">
+                        <img src="img/natillas.jpg" alt="Natillas caseras">
+                    </div>
+                </div>
+
+                <h2>Elaboración</h2>
+                <ol class="recipe-steps">
+                    <li>Separa un vaso de leche y disuelve en él la maicena.</li>
+                    <li>Calienta el resto de la leche con la canela y la piel de limón. Infusiona 10 minutos.</li>
+                    <li>Bate las yemas con el azúcar hasta que blanqueen.</li>
+                    <li>Añade la leche con maicena a las yemas y mezcla bien.</li>
+                    <li>Filtra la leche infusionada y júntala con el preparado anterior.</li>
+                    <li>Calienta a fuego suave sin dejar de remover hasta que espese.</li>
+                    <li>Sirve en cuencos con una galleta María encima y deja enfriar.</li>
+                </ol>
+            </article>
+        </main>
+    </div>
+
+
+    <!-- ================= VISTA DETALLADA: ARROZ AL HORNO ================= -->
+    <div id="receta-arroz" class="recipe-view">
+        <div class="top-nav">
+            <a href="#home" class="btn-volver">VOLVER</a>
+        </div>
+        
+        <header class="recipe-title-box">
+            <h1>Arroz al horno</h1>
+        </header>
+
+        <main class="recipe-detail-container">
+            <article>
+                <h2>Ingredientes (4-6 personas)</h2>
+                <div class="ingredients-layout">
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>arroz bomba</td><td>300gr</td></tr>
+                            <tr><td>garbanzos cocidos</td><td>100gr</td></tr>
+                            <tr><td>morcillas de cebolla</td><td>4</td></tr>
+                            <tr><td>patata</td><td>1</td></tr>
+                            <tr><td>tomate triturado</td><td>3 cucharadas</td></tr>
+                            <tr><td colspan="2" class="center-text">AOVE</td></tr>
+                            <tr><td>azafrán</td><td></td></tr>
+                            <tr><td>costillas</td><td>4</td></tr>
+                            <tr><td>tomate</td><td>1</td></tr>
+                            <tr><td>ajo</td><td>1 cabeza + 2 dientes</td></tr>
+                            <tr><td>sal</td><td></td></tr>
+                        </tbody>
+                    </table>
+                    <div class="recipe-img-box">
+                        <img src="img/arroz_horno.jpg" alt="Arroz al horno tradicional">
+                    </div>
+                </div>
+
+                <h2>Elaboración</h2>
+                <ol class="recipe-steps">
+                    <li>Pela la patata, córtala en lonchas finas y fríelas en una sartén con aceite. Escurre y reserva.</li>
+                    <li>Corta el tomate en lonchas y rehógalas en una sartén. Retira a un plato.</li>
+                    <li>Corta las costillas por la mitad, sazónalas y dóralas en otra sartén con aceite. Retira a un plato.</li>
+                    <li>Agrega las morcillas y rehógalas. Retíralas.</li>
+                    <li>Añade azafrán a la sartén, la salsa de tomate, los garbanzos y el arroz. Sazona y rehoga.</li>
+                    <li>Coloca el conjunto en una cazuela de barro y añade la costilla, y la morcilla. Agrega las patatas y las lonchas de tomate.</li>
+                    <li>Coloca la cabeza de ajos en la mitad, vierte el caldo e introduce la cazuela de barro en el horno a 220ºC durante 20 minutos.</li>
+                    <li>Sirve.</li>
+                </ol>
+            </article>
+        </main>
+    </div>
+
+
+    <!-- ================= VISTA DETALLADA: PISTO VEGETAL ================= -->
+    <div id="receta-pisto" class="recipe-view">
+        <div class="top-nav">
+            <a href="#home" class="btn-volver">VOLVER</a>
+        </div>
+        
+        <header class="recipe-title-box">
+            <h1>Pisto vegetal</h1>
+        </header>
+
+        <main class="recipe-detail-container">
+            <article>
+                <h2>Ingredientes (4 personas)</h2>
+                <div class="ingredients-layout">
+                    <table class="recipe-table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>calabacín</td><td>1 mediano</td></tr>
+                            <tr><td>berenjena</td><td>1 mediana</td></tr>
+                            <tr><td>pimiento rojo</td><td>1</td></tr>
+                            <tr><td>pimiento verde</td><td>1</td></tr>
+                            <tr><td>cebolla</td><td>1 grande</td></tr>
+                            <tr><td>tomate triturado natural</td><td>400gr</td></tr>
+                            <tr><td>aceite de oliva virgen extra</td><td>al gusto</td></tr>
+                            <tr><td>sal y pimienta</td><td>al gusto</td></tr>
+                        </tbody>
+                    </table>
+                    <div class="recipe-img-box">
+                        <img src="img/pisto.jpg" alt="Pisto vegetal">
+                    </div>
+                </div>
+
+                <h2>Elaboración</h2>
+                <ol class="recipe-steps">
+                    <li>Lava bien todas las verduras y córtalas en daditos pequeños.</li>
+                    <li>Pocha la cebolla y los pimientos en una sartén amplia con aceite.</li>
+                    <li>Añade la berenjena y el calabacín troceados.</li>
+                    <li>Rehoga el conjunto durante unos 15 minutos.</li>
+                    <li>Incorpora el tomate triturado y salpienta al gusto.</li>
+                    <li>Cocina a fuego lento durante 20-25 minutos y sirve.</li>
+                </ol>
+            </article>
+        </main>
+    </div>
+
+</body>
+</html>

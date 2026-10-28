@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+}
+
+/* Cabecera */
+header {
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+header h1 {
+  margin: 20px 0;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: lightgreen;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+/* Contenido principal: una sección por pieza */
+section {
+  background-color: aquamarine;
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+section h2 {
+  background-color: lightgray;
+  border: 8px solid orange;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+  padding: 10px;
+}
+
+section p {
+  border: 5px solid red;
+  margin: 0 0 30px 0;
+  padding: 2px 8px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+section img {
+  border: 8px solid purple;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  background-color: white;
+  display: block;
+  margin-bottom: 40px;
+}
+
+section h3 {
+  border: 5px solid royalblue;
+  margin: 0 0 30px 0;
+  padding: 2px 4px;
+}
+
+section ul {
+  background-color: yellow;
+  border: 5px solid black;
+  margin: 0 0 30px 0;
+  padding: 25px 25px 25px 45px;
+  font-size: 1.2em;
+}
+
+section p.precio {
+  margin-bottom: 20px;
+}
